@@ -9,7 +9,7 @@ import kr.co.tjoeun.listview_20200919.R
 import kr.co.tjoeun.listview_20200919.datas.Student
 
 class StudentAdapter(
-    val ,mContext: Context,
+    val mContext: Context,
     val resID: Int,
     val mList: ArrayList<Student>) : ArrayAdapter<Student>(mContext, resID, mList) {
 
@@ -23,6 +23,8 @@ class StudentAdapter(
         }
 
         val row = tempRow!!
+
+//         row에 데이터를 반영해서 => return 되도록
 
         return row
     }
